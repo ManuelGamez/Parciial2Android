@@ -112,7 +112,7 @@ public class Bebidas extends AppCompatActivity implements GoogleApiClient.OnConn
         String Nombre               =   productoB.toString();
         String Descripcion          =   descripB.toString();
         String Precio               =   PrecioB.toString();
-        float  SubTotal             =   Integer.parseInt(cantidad)*Integer.parseInt(Precio);
+        float  SubTotal             =   Integer.parseInt(cantidad)*Float.parseFloat(Precio);
         if(!codigocliente.isEmpty() && !Nombre.isEmpty() && !Descripcion.isEmpty() && !Precio.isEmpty() ) {
             ContentValues registro = new ContentValues();
             registro.put("nombrecliente", codigocliente);
@@ -124,6 +124,10 @@ public class Bebidas extends AppCompatActivity implements GoogleApiClient.OnConn
             registro.put("estado", 1);
             basededatos.insert("pedidos", null, registro);
             basededatos.close();
+            String valornulo = "XXXXXXXXXXXX";
+            NombreProducto.setText(valornulo);
+            ProductoPrecio.setText(valornulo);
+            ProductoDescripcion.setText(valornulo);
             cantidadEdit.setText("");
 
 
@@ -160,6 +164,7 @@ public class Bebidas extends AppCompatActivity implements GoogleApiClient.OnConn
             GoogleSignInAccount account = result.getSignInAccount();
             //nameText.setText(account.getDisplayName());
             //emailTextView.setText(account.getEmail());
+            //account.getId()
             idGoogle.setText(account.getId());
             try{
                 Glide.with(this).load(account.getPhotoUrl()).into(fotoperfil);

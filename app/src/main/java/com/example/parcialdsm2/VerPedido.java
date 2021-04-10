@@ -73,7 +73,7 @@ public class VerPedido extends AppCompatActivity implements GoogleApiClient.OnCo
                 //Asignamos el valor en nuestras variables para usarlos en lo que necesitemos
                 ListaProducto +=fila2.getString(0)+"\n Cantidad: "+fila2.getString(1)+"\n Precio: $"+fila2.getString(2)+"\n Sub total: $"+fila2.getString(3)+"\n ::::::::::::::::"+'\n';
                 NombreProducto.setText(ListaProducto);
-                TotalNumero = TotalNumero+ Integer.parseInt(fila2.getString(3));
+                TotalNumero = TotalNumero+ Float.parseFloat(fila2.getString(3));
 
             } while (fila2.moveToNext());
 
@@ -114,7 +114,7 @@ public class VerPedido extends AppCompatActivity implements GoogleApiClient.OnCo
             GoogleSignInAccount account = result.getSignInAccount();
             //nameText.setText(account.getDisplayName());
             //emailTextView.setText(account.getEmail());
-            idGoogle.setText(account.getId());
+            idGoogle.setText(account.getDisplayName());
             String idUsuario    =  account.getId().toString();
             try{
                 Glide.with(this).load(account.getPhotoUrl()).into(fotoperfil);

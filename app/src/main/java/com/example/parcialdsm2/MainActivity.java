@@ -17,14 +17,13 @@ import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.api.GoogleApi;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.OptionalPendingResult;
 import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.common.api.Status;
 
 public class MainActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
-    private ImageView photoImagenView;
+    public ImageView photoImagenView;
     private TextView nameText, idtext;
     private GoogleApiClient googleApiClient;
     @Override
@@ -32,13 +31,13 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        photoImagenView =   (ImageView)findViewById(R.id.photoImageView3);
+        photoImagenView =   (ImageView)findViewById(R.id.photo6);
         nameText        =   (TextView)findViewById(R.id.nametextView2);
         idtext          =   (TextView)findViewById(R.id.textView5);
 
         // Estamos creando un login silencioso
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                //.requestIdToken(getString(R.string.default_web_client_id))
+                .requestIdToken(getString(R.string.default_web_client_id))
                 .requestEmail()
                 .build();
         googleApiClient = new GoogleApiClient.Builder(this)
@@ -87,12 +86,16 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
             //emailTextView.setText(account.getEmail());
             idtext.setText(account.getId());
             try{
+               // Glide.with(this).load(account.getPhotoUrl()).into(photoImagenView);
                 Glide.with(this).load(account.getPhotoUrl()).into(photoImagenView);
+
+
+                //Log.d("MIAPP",account.getPhotoUrl().toString());
+
             }catch (NullPointerException e){
                 Toast.makeText(getApplicationContext(),"image no encontrada", Toast.LENGTH_LONG).show();
             }
-            //Glide.with(this).load(account.getPhotoUrl()).into(photoImagenView);
-            //Log.d("MIAPP",account.getPhotoUrl().toString());
+
         }
         else {
             goLogInScreen();

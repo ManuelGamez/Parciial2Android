@@ -9,15 +9,17 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="214dp"
-        android:layout_height="114dp"
+        android:layout_width="146dp"
+        android:layout_height="115dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.21"
+        app:layout_constraintVertical_bias="0.12"
+        app:srcCompat="@android:drawable/sym_def_app_icon"
         tools:srcCompat="@android:drawable/sym_def_app_icon" />
+
 
     <TextView
         android:id="@+id/textView4"
@@ -25,26 +27,26 @@
         android:layout_height="wrap_content"
         android:text="Bienvenido Ingrese con su cuenta"
         android:textColor="#FFFFFF"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.641"
+        app:layout_constraintHorizontal_bias="0.537"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.383" />
-
+        app:layout_constraintVertical_bias="0.318" />
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/singInButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="214dp"
+        android:layout_height="64dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintHorizontal_bias="0.548"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.477" />
+        app:layout_constraintVertical_bias="0.392" />
 
     <EditText
         android:id="@+id/passwordtext"
@@ -74,25 +76,26 @@
         app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.732" />
+        app:layout_constraintVertical_bias="0.729" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="281dp"
-        android:layout_height="101dp"
+        android:layout_width="343dp"
+        android:layout_height="115dp"
         android:text="Si eres administrador de la sucursal y quieres ingresar productos al menú ingresa tus credenciales  Por motivos de parcial las credenciales son: user: admin, password: 12345"
         android:textColor="#FBFBFB"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintHorizontal_bias="0.426"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.623" />
+        app:layout_constraintVertical_bias="0.561" />
 
     <Button
         android:id="@+id/button9"
-        android:layout_width="128dp"
-        android:layout_height="73dp"
+        android:layout_width="141dp"
+        android:layout_height="96dp"
         android:onClick="Dirigiendo"
         android:text="Ingresar como Administrador"
         app:layout_constraintBottom_toBottomOf="parent"
