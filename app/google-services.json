@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "963564754251",
+    "project_id": "desafio2dsm",
+    "storage_bucket": "desafio2dsm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963564754251:android:b41e5d65d94ea595f944ce",
+        "android_client_info": {
+          "package_name": "com.edu.sv.desafio2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963564754251-2e75hrjiq0ltcfc2g36r6m4jae6qqoce.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCra6fhLw5DEkZo2R3mjLxSPLDc9JUXX9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "963564754251-2e75hrjiq0ltcfc2g36r6m4jae6qqoce.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963564754251:android:576ce418ee38f7cbf944ce",
+        "android_client_info": {
+          "package_name": "com.example.parcialdsm2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963564754251-2e75hrjiq0ltcfc2g36r6m4jae6qqoce.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCra6fhLw5DEkZo2R3mjLxSPLDc9JUXX9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "963564754251-2e75hrjiq0ltcfc2g36r6m4jae6qqoce.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
