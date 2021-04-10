@@ -51,7 +51,7 @@ public class InformacionProductos extends AppCompatActivity implements GoogleApi
 
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-
+        Toast.makeText(this,"No se puede conectar perro",Toast.LENGTH_LONG).show();
     }
 
     @Override
