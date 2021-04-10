@@ -13,9 +13,10 @@
         android:text="Menú de comidas"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.243"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.14" />
+        app:layout_constraintVertical_bias="0.143" />
 
     <Spinner
         android:id="@+id/spinnerC"
@@ -126,7 +127,7 @@
         app:layout_constraintVertical_bias="0.473" />
 
     <EditText
-        android:id="@+id/editTextNumber2"
+        android:id="@+id/editcantidadC"
         android:layout_width="170dp"
         android:layout_height="56dp"
         android:ems="10"
@@ -143,6 +144,7 @@
         android:id="@+id/button9B"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="RegistrarComidas"
         android:text="Agregar Orden"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -150,5 +152,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.723" />
+
+    <ImageView
+        android:id="@+id/photo4"
+        android:layout_width="98dp"
+        android:layout_height="96dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/idGoogle4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.181" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

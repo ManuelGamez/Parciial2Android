@@ -13,9 +13,10 @@
         android:text="Bebidas Familiares"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.393"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.14" />
+        app:layout_constraintVertical_bias="0.207" />
 
     <Spinner
         android:id="@+id/spinnerC"
@@ -26,7 +27,7 @@
         app:layout_constraintHorizontal_bias="0.103"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.23" />
+        app:layout_constraintVertical_bias="0.359" />
 
     <Button
         android:id="@+id/comidainformacion"
@@ -39,7 +40,7 @@
         app:layout_constraintHorizontal_bias="0.938"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.231" />
+        app:layout_constraintVertical_bias="0.359" />
 
     <TextView
         android:id="@+id/txtprecioC"
@@ -126,7 +127,7 @@
         app:layout_constraintVertical_bias="0.473" />
 
     <EditText
-        android:id="@+id/editTextNumber2"
+        android:id="@+id/editcantidadC"
         android:layout_width="170dp"
         android:layout_height="56dp"
         android:ems="10"
@@ -143,6 +144,7 @@
         android:id="@+id/button9B"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="RegistrarBebidas"
         android:text="Agregar Orden"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -152,15 +154,27 @@
         app:layout_constraintVertical_bias="0.723" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/photo1"
         android:layout_width="105dp"
         android:layout_height="87dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintHorizontal_bias="0.931"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.36"
+        app:layout_constraintVertical_bias="0.024"
         tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/idtextG1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.168" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

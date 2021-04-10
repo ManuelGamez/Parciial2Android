@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.Auth;
@@ -18,11 +20,16 @@ import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.GoogleApi;
 import com.google.android.gms.common.api.GoogleApiClient;
 
+import org.w3c.dom.ProcessingInstruction;
+import org.w3c.dom.Text;
+
 import java.net.Authenticator;
 
 public class InformacionProductos extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
     private GoogleApiClient googleApiClient;
     private SignInButton signInButton;
+    private TextView usuario,contras;
+
     public static  final int SIGN_IN_CODE =777;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +44,9 @@ public class InformacionProductos extends AppCompatActivity implements GoogleApi
                 .enableAutoManage(this,this)
                 .addApi(Auth.GOOGLE_SIGN_IN_API,gso)
                 .build();
-        signInButton = (SignInButton)findViewById(R.id.singInButton);
+        signInButton    =   (SignInButton)findViewById(R.id.singInButton);
+        usuario         =   (TextView)findViewById(R.id.usertext);
+        contras         =   (TextView)findViewById(R.id.passwordtext);
         signInButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -53,6 +62,8 @@ public class InformacionProductos extends AppCompatActivity implements GoogleApi
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
         Toast.makeText(this,"No se puede conectar perro",Toast.LENGTH_LONG).show();
     }
+
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode,  Intent data) {
@@ -79,5 +90,22 @@ public class InformacionProductos extends AppCompatActivity implements GoogleApi
         Intent intent = new Intent(this,MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
+    }
+    //::::::::::::::::::::::::::::::::::::::::::::::::::: Funcion Para ingresar productos ::::::::::::::::::::::::::::::
+
+
+
+    public void Dirigiendo(View view) {
+        String usuarioclave = "admin" ;
+        String contrasclave = "12345";
+        if(usuarioclave.equals(usuario.getText().toString()) && contrasclave.equals(contras.getText().toString()))
+        {
+            Intent intent = new Intent(this,IngresarProductos.class);
+            startActivity(intent);
+        }
+        else
+        {
+            Toast.makeText(this,"Credenciales Erroneas",Toast.LENGTH_SHORT).show();
+        }
     }
 }

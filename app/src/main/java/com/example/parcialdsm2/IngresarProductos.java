@@ -99,7 +99,7 @@ public class IngresarProductos extends AppCompatActivity {
         }
         public void Menu(View view)
         {
-            Intent i = new Intent(this,MainActivity.class);
+            Intent i = new Intent(this,InformacionProductos.class);
             startActivity(i);
         }
 
