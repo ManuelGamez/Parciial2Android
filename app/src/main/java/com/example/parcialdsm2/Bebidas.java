@@ -44,8 +44,8 @@ public class Bebidas extends AppCompatActivity implements GoogleApiClient.OnConn
         NombreProducto      =   (TextView) findViewById(R.id.txtNombreC);
         ProductoPrecio      =   (TextView)findViewById(R.id.txtprecioC);
         ProductoDescripcion =   (TextView)findViewById(R.id.txtdescripcionC);
-        idGoogle            =   (TextView)findViewById(R.id.idtextG1);
-        fotoperfil          =   (ImageView)findViewById(R.id.photo1);
+        idGoogle            =   (TextView)findViewById(R.id.idGoogle4);
+        fotoperfil          =   (ImageView)findViewById(R.id.photo4);
         cantidadEdit        =   (EditText)findViewById(R.id.editcantidadC);
         //:::::::::::::::::::: CONEXION CON GOOGLE ::::::::::::::::::::::::::::::::::::::::::::::
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)

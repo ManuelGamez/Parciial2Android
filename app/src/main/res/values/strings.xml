@@ -1,3 +1,34 @@
 <resources>
-    <string name="app_name">ParcialDSM2</string>
+    <string name="app_name">Tacos Locos</string>
+    <string name="welcome">Bienvenido! Ingrese con su cuenta</string>
+    <string name="mensaje">Si eres administrador y quieres ingresar productos al menú, ingresa tus credenciales. (Por motivos del parcial, las credenciales son; Usuario: admin y Contraseña: 12345)</string>
+    <string name="lbl_user">Usuario</string>
+    <string name="lbl_password">Contraseña</string>
+    <string name="login">Ingresar como Administrador</string>
+    <string name="main_welcome">Bienvenidos\as a Tacos Locos</string>
+    <string name="orden">Número de Orden</string>
+    <string name="texto">TextView</string>
+    <string name="platillos">Platillos</string>
+    <string name="bebidas">Bebidas</string>
+    <string name="resumen">Resumen de Orden</string>
+    <string name="menucomidas">Menú de Comidas</string>
+    <string name="menubebidas">Menú de Bebidas</string>
+    <string name="informacion">Más Información</string>
+    <string name="prod">Producto:</string>
+    <string name="desc">Descripción:</string>
+    <string name="price">Precio:              $</string>
+    <string name="relleno">xxxxxxxx</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="add">Agregar Orden</string>
+    <string name="menu">Menú</string>
+    <string name="admin">Administrador</string>
+    <string name="codigo">Código Producto</string>
+    <string name="nombre">Nombre Producto</string>
+    <string name="descripción">Descripción Producto</string>
+    <string name="precio">Precio Unitario</string>
+    <string name="plato">Platillo</string>
+    <string name="bebida">Bebida</string>
+    <string name="registrar">Registrar</string>
+    <string name="total">TOTAL : $</string>
+    <string name="noorder">No hay ordenes</string>
 </resources>

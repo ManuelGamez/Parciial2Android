@@ -12,7 +12,8 @@
         <activity android:name=".IngresarProductos">
         </activity>
         <activity android:name=".VerPedido" />
-        <activity android:name=".InformacionProductos" >
+        <activity android:name=".InformacionProductos"
+            android:theme="@style/SplashTheme"> <!-- Aquí llamamos nuestro tema -->>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

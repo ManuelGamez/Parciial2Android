@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,191 +7,175 @@
     tools:context=".Comidas">
 
     <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/orden"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/idGoogle4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto"
+        android:textColor="#03A9F4"
+        android:textSize="14sp"
+        android:layout_below="@id/textView8"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Menú de comidas"
+        android:text="@string/menucomidas"
         android:textColor="#3F51B5"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.059"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.209" />
+        android:layout_below="@id/idGoogle4"
+        android:layout_marginTop="53dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/photo4"
+        android:layout_width="95dp"
+        android:layout_height="96dp"
+        android:layout_below="@id/idGoogle4"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        />
 
     <Spinner
         android:id="@+id/spinnerC"
-        android:layout_width="208dp"
+        android:layout_width="150dp"
         android:layout_height="53dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.078"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.308" />
+        android:background="@drawable/input_design"
+        android:layout_below="@id/textView3"
+        android:layout_marginTop="53dp"
+        android:layout_marginLeft="10dp"
+        />
 
     <Button
         android:id="@+id/comidainformacion"
-        android:layout_width="150dp"
-        android:layout_height="52dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:onClick="consultarbdcomida"
-        android:text="Mas Informacion"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.919"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.307" />
-
-    <TextView
-        android:id="@+id/txtprecioC"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="xxxxxxxxxx"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.724"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.652" />
-
-    <TextView
-        android:id="@+id/textView24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Descripcion: "
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.536" />
-
-    <TextView
-        android:id="@+id/textView26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Precio:              $"
-        android:textColor="#050505"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.105"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.652" />
+        android:text="@string/informacion"
+        android:layout_below="@id/textView3"
+        android:layout_toRightOf="@id/spinnerC"
+        android:layout_marginTop="53dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/buttons"
+        />
 
     <TextView
         android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Producto: "
+        android:text="@string/prod"
         android:textColor="#000000"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.097"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.473" />
-
-    <TextView
-        android:id="@+id/txtdescripcionC"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="xxxxxxxxx"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.105"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.582" />
+        android:layout_below="@id/spinnerC"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        />
 
     <TextView
         android:id="@+id/txtNombreC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="xxxxxxx"
+        android:text="@string/relleno"
         android:textColor="#000000"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.668"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.473" />
+        android:layout_below="@id/spinnerC"
+        android:layout_toRightOf="@id/textView23"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/desc"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_below="@id/textView23"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txtdescripcionC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/relleno"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_below="@id/textView24"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        android:textColor="#050505"
+        android:textSize="18sp"
+        android:layout_below="@id/txtdescripcionC"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+       />
+
+    <TextView
+        android:id="@+id/txtprecioC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/relleno"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_below="@id/txtdescripcionC"
+        android:layout_toRightOf="@id/textView26"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+       />
+
 
     <EditText
         android:id="@+id/editcantidadC"
-        android:layout_width="164dp"
-        android:layout_height="45dp"
+        android:layout_width="150dp"
+        android:layout_height="53dp"
         android:ems="10"
-        android:hint="Cantidad"
+        android:hint="@string/cantidad"
         android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.087"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.777" />
+        android:layout_below="@id/textView26"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:textAlignment="center"
+        android:background="@drawable/input_design"
+        />
 
     <Button
         android:id="@+id/button9B"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="RegistrarComidas"
-        android:text="Agregar Orden"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.916"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.78" />
+        android:text="@string/add"
+        android:layout_below="@id/textView26"
+        android:layout_toRightOf="@id/editcantidadC"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/buttons"
+        />
 
-    <ImageView
-        android:id="@+id/photo4"
-        android:layout_width="95dp"
-        android:layout_height="96dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.933"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.119"
-
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <TextView
-        android:id="@+id/idGoogle4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textColor="#03A9F4"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.058"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.062" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="N# de orden:"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.048"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
