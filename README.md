@@ -14,7 +14,7 @@ Antes de comenzar a utilizar la App, es necesario:
 
 * [Android Studio] https://developer.android.com/studio?hl=es-419&gclid=Cj0KCQjwppSEBhCGARIsANIs4p4EyyCZX7TunXEly893f1rdPBxQZQxE0e-v119AxRyg1cffFvvUY2EaAjJsEALw_wcB&gclsrc=aw.ds - IDE de desarrollo
 * [Java] https://www.java.com/es/download/ie_manual.jsp - Java como lenguaje de programación
-* [Git]
+* [Git] - https://git-scm.com/downloads - Git como controlador de versiones
 
 ## Guia de Uso
 
