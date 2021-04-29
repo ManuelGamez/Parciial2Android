@@ -13,7 +13,6 @@ Antes de comenzar a utilizar la App, es necesario:
 ## Pre-Requisitos de desarrollo (Tecnologías)
 
 * [Android Studio] https://developer.android.com/studio?hl=es-419&gclid=Cj0KCQjwppSEBhCGARIsANIs4p4EyyCZX7TunXEly893f1rdPBxQZQxE0e-v119AxRyg1cffFvvUY2EaAjJsEALw_wcB&gclsrc=aw.ds - IDE de desarrollo
-* [Firebase] https://firebase.google.com/ - RealTime Database para el almacenamiento de datos
 * [Java] https://www.java.com/es/download/ie_manual.jsp - Java como lenguaje de programación
 
 ## Guia de Uso
