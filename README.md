@@ -10,7 +10,7 @@ Antes de comenzar a utilizar la App, es necesario:
 * Poseer una cuenta de Google
 * Poseer un dispositivo con el sistema operativo Android
 
-## Pre-Requisitos de desarrollo (Tecnologpias)
+## Pre-Requisitos de desarrollo (Tecnologías)
 
 * [Android Studio] https://developer.android.com/studio?hl=es-419&gclid=Cj0KCQjwppSEBhCGARIsANIs4p4EyyCZX7TunXEly893f1rdPBxQZQxE0e-v119AxRyg1cffFvvUY2EaAjJsEALw_wcB&gclsrc=aw.ds - IDE de desarrollo
 * [Firebase] https://firebase.google.com/ - RealTime Database para el almacenamiento de datos
